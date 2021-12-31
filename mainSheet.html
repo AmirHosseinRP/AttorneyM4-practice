@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <title>AttorneyM4</title>
+    <link rel="stylesheet" href="styleSheet.css">
+    <link rel="icon" href="images/logo2.png">
+</head>
+<body>
+<div class="navbar" id="navbar">
+    <div class="siteicon">
+        <img id="logo1" src="images/logo2.png">
+        <a id="logoText" href=""><b>ATTORNEYM4</b></a>
+    </div>
+    <ul class="menubar" id="menubar">
+        <li>
+            <a href="#link1">HOME</a>
+            <div class="oline"></div>
+        </li>
+        <li>
+            <a href="#link2">LIVE DEMO</a>
+            <div class="oline"></div>
+            <ul class="submenu">
+                <li>
+                    <a href="#link2-1">Law Firm</a>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <a href="#link2-2">Legal Advisor</a>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <a href="link2-3">Attorney Services</a>
+                    <div class="line"></div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#link3">LIVE DEMO BLOCKS</a>
+            <div class="oline"></div>
+            <ul class="submenu">
+                <li>
+                    <a href="#link3-1">Headers</a>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <a href="#link3-2">Features</a>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <a href="#link3-3">Content</a>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <a href="#link3-4">Image and Videos</a>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <a href="#link3-5">Pricing-Table</a>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <a href="#link3-6">Team</a>
+                    <div class="line"></div>
+                </li>
+            </ul>
+        </li>
+        <div class="buyButton"><a href="#buylink">BUY NOW</a> </div>
+    </ul>
+    <div href="javascript:void(0);" class="menuButton" onclick="myFunction()">
+        <div id="buyButtonLine1"></div>
+        <div id="buyButtonLine2"></div>
+        <div id="buyButtonLine3"></div>
+    </div>
+
+</div>
+<div>
+    <img id="headerImg" src="images/headers.jpg">
+</div>
+
+<script>
+    function myFunction() {
+        var menubar = document.getElementById("menubar");
+        var line1 = document.getElementById("buyButtonLine1");
+        var line2 = document.getElementById("buyButtonLine2");
+        var line3 = document.getElementById("buyButtonLine3");
+        if (menubar.style.display === "block") {
+            menubar.style.display = "none";
+            line1.style.transform = "rotate(0deg)";
+            line1.style.top = "16px";
+            line2.style.transform = "rotate(0deg)";
+            line2.style.top = "29px";
+            line3.style.display = "block";
+        } else {
+            menubar.style.display = "block";
+            line1.style.transform = "rotate(45deg)";
+            line1.style.top = "25px";
+            line2.style.transform = "rotate(-45deg)";
+            line2.style.top = "22px";
+            line3.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
